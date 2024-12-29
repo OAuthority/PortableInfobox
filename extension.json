@@ -102,6 +102,19 @@
 				"infoboxbuilder-nodeparam-value",
 				"infoboxbuilder-templatename"
 			]
+		},
+		"ext.PortableInfobox.visualEditor": {
+			"scripts": [
+				"resources/ve/dm/ve.dm.MWPortableInfoboxTransclusion.js",
+				"resources/ve/ce/ve.ce.MWPortableInfoboxTransclusion.js"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore",
+				"ext.visualEditor.mwtransclusion"
+			],
+			"messages": [
+				"portableinfobox-visualeditor-mwportableinfoboxdialog-title"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -147,6 +160,13 @@
 	},
 	"APIListModules": {
 		"allinfoboxes": "ApiQueryAllInfoboxes"
+	},
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.PortableInfobox.visualEditor"
+			]
+		}
 	},
 	"manifest_version": 2
 }
