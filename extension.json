@@ -18,7 +18,11 @@
 	},
 	"config": {
 		"AllInfoboxesSubpagesBlacklist": {
-			"value": [ "doc", "draft", "test" ]
+			"value": [
+				"doc",
+				"draft",
+				"test"
+			]
 		},
 		"PortableInfoboxCacheRenderers": {
 			"value": false
@@ -102,6 +106,18 @@
 				"infoboxbuilder-nodeparam-value",
 				"infoboxbuilder-templatename"
 			]
+		},
+		"ext.PortableInfobox.visualEditor": {
+			"scripts": [
+				"resources/ve/ve.ui.MWPIInit.js",
+				"resources/ve/ve.ui.MWPortableInfoboxDialog.js"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore"
+			],
+			"messages": [
+				"portableinfobox-visualeditor-mwportableinfoboxdialog-title"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -147,6 +163,13 @@
 	},
 	"APIListModules": {
 		"allinfoboxes": "ApiQueryAllInfoboxes"
+	},
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.PortableInfobox.visualEditor"
+			]
+		}
 	},
 	"manifest_version": 2
 }
