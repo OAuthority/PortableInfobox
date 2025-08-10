@@ -22,9 +22,6 @@ class InfoboxTag extends ExtensionTagHandler implements ExtensionModule {
 					'name' => 'infobox',
 					'handler' => self::class
 				]
-			],
-			'domProcessors' => [
-				'PortableInfobox\\Parsoid\\PortableInfoboxDOMProcessor'
 			]
 		];
 	}
